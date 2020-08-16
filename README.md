@@ -1,6 +1,6 @@
-# TWRP Device configuration for Samsung Galaxy Tab A 9.7" WiFi (gt510wifi)
+# TWRP Device configuration for Samsung Galaxy Tab A 9.7" WiFi (gt510wifi/SM-T550)
 
-Copyright 2018 - The OmniROM Project
+Copyright 2018/2020 - The OmniROM Project
 
 For building TWRP for Samsung Galaxy Tab A 9.7" WiFi ONLY.
 
@@ -8,16 +8,19 @@ For building TWRP for Samsung Galaxy Tab A 9.7" WiFi ONLY.
 Check here: https://github.com/Galaxy-MSM8916/android_kernel_samsung_msm8916
 
 ### How to compile
+ubuntu 20.04+ sudo apt install -y libncurses5 libtinfo5
 
-```sh
-. build/envsetup.sh
+export ALLOW_MISSING_DEPENDENCIES=true
+
+source build/envsetup.sh
+
 lunch omni_gt510wifi-eng
-make -j64 recoveryimage
-```
+
+mka recoveryimage
+
 
 ### Device specifications
 =====================================
-
 Basic   | Spec Sheet
 -------:|:-------------------------
 CPU     | Qualcomm MSM8916 Quad-core 1.2 GHz ARM® Cortex™ A53

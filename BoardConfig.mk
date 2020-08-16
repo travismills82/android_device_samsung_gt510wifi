@@ -72,7 +72,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 11900268544
 BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS:= true
-#BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_HAS_LARGE_FILESYSTEM := true
 
 # TWRP
 TW_THEME := portrait_hdpi
@@ -89,8 +89,8 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_EXCLUDE_SUPERSU := true
 TARGET_RECOVERY_FSTAB := device/samsung/gt510wifi/recovery/root/etc/twrp.fstab
 TW_INPUT_BLACKLIST := "hbtp_vm"
-#TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-#TW_INCLUDE_NTFS_3G := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_INCLUDE_NTFS_3G := true
 
 # Oreo
 #TW_NO_LEGACY_PROPS := true
