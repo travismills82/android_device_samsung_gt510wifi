@@ -27,4 +27,4 @@
 /firmware      vfat      /dev/block/bootdevice/by-name/apnhlos       flags=backup=1;display="Firmware"
 
 /external_sd   auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1     flags=display="Micro SDcard";storage;wipeingui;removable
-/usb-otg auto /dev/block/sda1 /dev/block/sda 			     flags=display="USB-OTG";storage;wipeingui;removable
+/usb-otg       auto      /dev/block/sda1 /dev/block/sda 	       flags=display="USB-OTG";storage;wipeingui;removable
